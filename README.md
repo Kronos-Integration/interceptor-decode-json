@@ -12,17 +12,9 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 
-kronos-interceptor
+kronos-interceptor-decode-json
 =====
-introspects / modifies requests as they pass between endpoints
-
-```javascript
-
-interceptor1.connected = interceptor2
-
-promise = interceptor1.receive(request);
-```
-
+decodes json streams into objects
 
 install
 =======
@@ -30,7 +22,7 @@ install
 With [npm](http://npmjs.org) do:
 
 ```shell
-npm install kronos-interceptor
+npm install kronos-interceptor-decode-json
 ```
 
 license

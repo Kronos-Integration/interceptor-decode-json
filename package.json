@@ -2,6 +2,7 @@
   "name": "kronos-interceptor-decode-json",
   "version": "0.0.0-semantic-release",
   "description": "decodes json streams into objects",
+  "main": "decode-json.js",
   "keywords": [
     "kronos-interceptor"
   ],
@@ -29,13 +30,16 @@
     "mocha": "2.4.5",
     "semantic-release": "6.2.1"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=6"
@@ -44,5 +48,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "kronos-interceptor": "^2.2.1",
+    "parse-concat-stream": "^0.2.0"
   }
 }
