@@ -32,7 +32,4 @@ class DecodeJSONInterceptor extends Interceptor {
 }
 
 exports.decode = DecodeJSONInterceptor;
-
-exports.registerWithManager = manager => Promise.all([
-	manager.registerInterceptor(DecodeJSONInterceptor),
-]);
+exports.registerWithManager = manager => manager.registerInterceptor(DecodeJSONInterceptor);
