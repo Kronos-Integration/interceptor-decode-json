@@ -27,7 +27,7 @@
     "jsdoc": "3.4.0",
     "kronos-test-interceptor": "^2.0.3",
     "loglevel-mixin": "1.4.2",
-    "mocha": "2.5.2",
+    "mocha": "2.5.3",
     "semantic-release": "6.2.1"
   },
   "contributors": [
