@@ -23,7 +23,7 @@
   "devDependencies": {
     "chai": "3.5.0",
     "cz-conventional-changelog": "1.1.6",
-    "istanbul": "0.4.3",
+    "istanbul": "0.4.4",
     "jsdoc": "3.4.0",
     "kronos-test-interceptor": "^2.0.3",
     "loglevel-mixin": "1.4.2",
