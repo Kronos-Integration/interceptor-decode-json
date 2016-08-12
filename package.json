@@ -25,7 +25,7 @@
     "cz-conventional-changelog": "1.1.7",
     "istanbul": "0.4.4",
     "jsdoc": "3.4.0",
-    "kronos-test-interceptor": "^2.0.3",
+    "kronos-test-interceptor": "^2.0.4",
     "loglevel-mixin": "1.4.2",
     "mocha": "3.0.2",
     "semantic-release": "6.3.0"
