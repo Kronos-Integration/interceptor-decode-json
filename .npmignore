@@ -1,6 +1,7 @@
 coverage
 node_modules
 build
+tests
 doc
 *.log
 *.tmp
@@ -12,4 +13,5 @@ doc
 .travis.yml
 .npmignore
 .vscode
+.markdown-doctest-setup.js
 SUMMARY.md
