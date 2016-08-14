@@ -22,7 +22,7 @@
   "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
   "devDependencies": {
     "chai": "3.5.0",
-    "cz-conventional-changelog": "1.1.7",
+    "cz-conventional-changelog": "1.2.0",
     "istanbul": "0.4.4",
     "jsdoc": "3.4.0",
     "kronos-test-interceptor": "^2.0.4",
