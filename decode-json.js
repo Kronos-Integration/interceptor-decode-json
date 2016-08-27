@@ -13,10 +13,6 @@ class DecodeJSONInterceptor extends Interceptor {
 		return 'decode-json';
 	}
 
-	get type() {
-		return DecodeJSONInterceptor.name;
-	}
-
 	receive(request, args) {
 		return new Promise((fullfilled, rejected) =>
 			request.payload.pipe(pcs((err, data) => {

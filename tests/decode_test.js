@@ -33,7 +33,7 @@ function dummyEndpoint(name) {
     toString() {
       return this.name;
     },
-    "step": logger
+    step: logger
   };
 }
 
