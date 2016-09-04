@@ -50,7 +50,7 @@
     }
   },
   "dependencies": {
-    "kronos-interceptor": "^2.2.2",
+    "kronos-interceptor": "^2.3.0",
     "parse-concat-stream": "^0.2.0"
   }
 }
