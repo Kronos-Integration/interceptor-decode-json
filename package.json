@@ -24,7 +24,7 @@
     "chai": "3.5.0",
     "cz-conventional-changelog": "1.2.0",
     "istanbul": "0.4.5",
-    "jsdoc": "3.4.0",
+    "jsdoc": "3.4.1",
     "kronos-test-interceptor": "^2.0.4",
     "loglevel-mixin": "1.4.2",
     "mocha": "3.0.2",
