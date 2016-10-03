@@ -7,9 +7,9 @@
     "kronos-interceptor"
   ],
   "scripts": {
-    "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
-    "doc": "node ./node_modules/.bin/jsdoc lib/*.js",
-    "test": "node ./node_modules/.bin/mocha tests/*_test.js",
+    "cover": "./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js",
+    "doc": "./node_modules/.bin/jsdoc lib/*.js",
+    "test": "./node_modules/.bin/mocha tests/*_test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -24,21 +24,24 @@
     "chai": "3.5.0",
     "cz-conventional-changelog": "1.2.0",
     "istanbul": "0.4.5",
-    "jsdoc": "3.4.1",
+    "jsdoc": "3.4.0",
     "kronos-test-interceptor": "^2.0.5",
     "mocha": "3.1.0",
-    "semantic-release": "6.3.0"
+    "semantic-release": "6.3.1"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.5"
+    "node": ">=6.6"
   },
   "config": {
     "commitizen": {
