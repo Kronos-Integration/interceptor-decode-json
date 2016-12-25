@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - 6.9.1
+  - 6.9.2
 sudo: false
 branches:
   only:
     - master
+    - /^greenkeeper-.*$/
 cache:
   directories:
     - node_modules
@@ -18,8 +19,10 @@ before_script:
   - npm prune
   - npm install -g codecov
 script:
-  - npm run-script cover
+  - npm run cover
 after_script:
   - codecov
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - npm run docs
 after_success:
   - npm run semantic-release

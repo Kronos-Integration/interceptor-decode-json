@@ -2,8 +2,12 @@
 
 'use strict';
 
-const pcs = require('parse-concat-stream'),
-	Interceptor = require('kronos-interceptor').Interceptor;
+const pcs = require('parse-concat-stream');
+
+import {
+	Interceptor
+}
+from 'kronos-interceptor';
 
 /**
  *
@@ -27,5 +31,12 @@ class DecodeJSONInterceptor extends Interceptor {
 	}
 }
 
-exports.decode = DecodeJSONInterceptor;
-exports.registerWithManager = manager => manager.registerInterceptor(DecodeJSONInterceptor);
+
+function registerWithManager(manager) {
+	manager.registerInterceptor(DecodeJSONInterceptor);
+}
+
+export {
+	DecodeJSONInterceptor,
+	registerWithManager
+};
