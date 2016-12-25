@@ -2,16 +2,16 @@
   "name": "kronos-interceptor-decode-json",
   "version": "0.0.0-semantic-release",
   "description": "decodes json streams into objects",
-  "main": "decode-json.js",
+  "main": "dist/decode-json.js",
+  "module": "src/decode-json.js",
   "keywords": [
     "kronos-interceptor"
   ],
   "scripts": {
     "cover": "npm run build && node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports tests/*_test.js",
-    "doc": "./node_modules/.bin/jsdoc lib/*.js",
     "test": "npm run build && node_modules/.bin/mocha tests/*_test.js && markdown-doctest",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "build": "node_modules/rollup/bin/rollup --output=decode-json.js -c -- {{module}}",
+    "build": "node_modules/rollup/bin/rollup --output=dist/decode-json.js -c -- src/decode-json.js",
     "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js > README.md"
   },
   "repository": {
@@ -26,7 +26,6 @@
     "chai": "^3.5.0",
     "cz-conventional-changelog": "^1.2.0",
     "istanbul": "^0.4.5",
-    "jsdoc": "3.4.2",
     "kronos-test-interceptor": "^2.0.5",
     "mocha": "^3.2.0",
     "semantic-release": "^6.3.5",
@@ -34,16 +33,13 @@
     "markdown-doctest": "^0.9.1",
     "rollup": "^0.38.0"
   },
-  "contributors": [
-    {
-      "name": "Torsten Link",
-      "email": "torstenlink@gmx.de"
-    },
-    {
-      "name": "Markus Felten",
-      "email": "markus.felten@gmx.de"
-    }
-  ],
+  "contributors": [{
+    "name": "Torsten Link",
+    "email": "torstenlink@gmx.de"
+  }, {
+    "name": "Markus Felten",
+    "email": "markus.felten@gmx.de"
+  }],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=6.9.2"

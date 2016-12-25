@@ -10,7 +10,7 @@ const chai = require('chai'),
   fs = require('fs'),
   path = require('path'),
   kti = require('kronos-test-interceptor'),
-  JSONDecodeInterceptor = require('../decode-json').decode;
+  JSONDecodeInterceptor = require('../dist/decode-json').DecodeJSONInterceptor;
 
 const mochaInterceptorTest = kti.mochaInterceptorTest,
   testResponseHandler = kti.testResponseHandler;
