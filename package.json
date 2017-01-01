@@ -8,11 +8,13 @@
     "kronos-interceptor"
   ],
   "scripts": {
-    "cover": "npm run build && node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports tests/*_test.js",
-    "test": "npm run build && node_modules/.bin/mocha tests/*_test.js && markdown-doctest",
+    "cover": "npm run prepublish && istanbul cover node_modules/.bin/_mocha -- -u exports tests/*_test.js",
+    "test": "mocha tests/*_test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "build": "node_modules/rollup/bin/rollup --output=dist/decode-json.js -c -- src/decode-json.js",
-    "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js > README.md"
+    "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js > README.md",
+    "prepublish": "rollup --output=dist/decode-json.js -c -- src/decode-json.js",
+    "pretest": "npm run prepublish",
+    "posttest": "markdown-doctest"
   },
   "repository": {
     "type": "git",
