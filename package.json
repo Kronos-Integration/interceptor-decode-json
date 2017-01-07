@@ -55,7 +55,7 @@
     }
   },
   "dependencies": {
-    "kronos-interceptor": "^2.4.9",
+    "kronos-interceptor": "^2.4.10",
     "parse-concat-stream": "^0.2.0"
   }
 }
