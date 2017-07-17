@@ -31,9 +31,9 @@
     "kronos-test-interceptor": "^2.1.0",
     "markdown-doctest": "^0.9.1",
     "mocha": "^3.4.2",
+    "nyc": "^11.1.0",
     "rollup": "^0.45.2",
-    "semantic-release": "^6.3.6",
-    "nyc": "^11.0.3"
+    "semantic-release": "^6.3.6"
   },
   "contributors": [
     {
@@ -50,7 +50,7 @@
     "node": ">=8.1.4"
   },
   "dependencies": {
-    "kronos-interceptor": "^2.4.15",
+    "kronos-interceptor": "2.4.16",
     "parse-concat-stream": "^0.2.0"
   },
   "nyc": {
