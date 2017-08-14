@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
+    "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
   },
   "bugs": {
     "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
@@ -32,7 +32,7 @@
     "markdown-doctest": "^0.9.1",
     "mocha": "^3.5.0",
     "nyc": "^11.1.0",
-    "rollup": "^0.47.0",
+    "rollup": "^0.47.4",
     "semantic-release": "^6.3.6"
   },
   "contributors": [
@@ -47,7 +47,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=8.2.1"
+    "node": ">=8.3.0"
   },
   "dependencies": {
     "kronos-interceptor": "2.4.16",
