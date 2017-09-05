@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
   "devDependencies": {
-    "chai": "^4.1.1",
+    "chai": "^4.1.2",
     "jsdoc-to-markdown": "^3.0.0",
     "kronos-test-interceptor": "^2.1.0",
     "markdown-doctest": "^0.9.1",
     "mocha": "^3.5.0",
-    "nyc": "^11.1.0",
+    "nyc": "^11.2.0",
     "rollup": "^0.49.2",
     "semantic-release": "^7.0.2"
   },
