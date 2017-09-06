@@ -1,22 +1,5 @@
 {
   "name": "kronos-interceptor-decode-json",
-  "version": "0.0.0-semantic-release",
-  "description": "decodes json streams into objects",
-  "main": "dist/decode-json.js",
-  "module": "src/decode-json.js",
-  "keywords": [
-    "kronos-interceptor"
-  ],
-  "scripts": {
-    "cover": "nyc npm test",
-    "test": "mocha tests/*_test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
-    "pretest": "rollup -c",
-    "posttest": "markdown-doctest",
-    "precover": "rollup -c",
-    "prepare": "rollup -c"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
@@ -25,34 +8,43 @@
     "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
+  "scripts": {
+    "precover": "rollup -c",
+    "cover": "nyc npm test",
+    "pretest": "rollup -c",
+    "test": "mocha tests/*_test.js",
+    "posttest": "markdown-doctest",
+    "prepare": "rollup -c",
+    "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
   "devDependencies": {
-    "chai": "^4.1.2",
     "jsdoc-to-markdown": "^3.0.0",
-    "kronos-test-interceptor": "^2.1.0",
     "markdown-doctest": "^0.9.1",
+    "chai": "^4.1.2",
     "mocha": "^3.5.0",
-    "nyc": "^11.2.0",
+    "nyc": "^11.2.1",
     "rollup": "^0.49.2",
     "semantic-release": "^7.0.2"
   },
+  "engines": {
+    "node": ">=8.4.0"
+  },
+  "version": "0.0.0-semantic-release",
+  "description": "{{description}}",
+  "main": "dist/index.js",
+  "keywords": [
+    "npm-package-template",
+    "kronos-interceptor"
+  ],
+  "dependencies": {},
   "contributors": [
-    {
-      "name": "Torsten Link",
-      "email": "torstenlink@gmx.de"
-    },
     {
       "name": "Markus Felten",
       "email": "markus.felten@gmx.de"
     }
   ],
   "license": "BSD-2-Clause",
-  "engines": {
-    "node": ">=8.4.0"
-  },
-  "dependencies": {
-    "kronos-interceptor": "2.4.16",
-    "parse-concat-stream": "^0.2.0"
-  },
   "nyc": {
     "include": [
       "dist/**/*.js"
