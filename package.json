@@ -4,12 +4,10 @@
   "description": "decodes json streams into objects",
   "main": "dist/decode-json.js",
   "module": "src/decode-json.js",
-  "keywords": [
-    "kronos-interceptor"
-  ],
+  "keywords": ["kronos-interceptor"],
   "scripts": {
     "cover": "nyc npm test",
-    "test": "mocha tests/*_test.js",
+    "test": "mocha tests/*-test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
     "pretest": "rollup -c",
@@ -54,12 +52,8 @@
     "parse-concat-stream": "^0.2.0"
   },
   "nyc": {
-    "include": [
-      "dist/**/*.js"
-    ],
-    "reporter": [
-      "lcov"
-    ],
+    "include": ["dist/**/*.js"],
+    "reporter": ["lcov"],
     "report-dir": "./coverage"
   },
   "template": {
