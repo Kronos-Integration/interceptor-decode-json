@@ -33,7 +33,7 @@
     "mocha": "^4.0.1",
     "nyc": "^11.3.0",
     "rollup": "^0.50.0",
-    "semantic-release": "^8.2.1"
+    "semantic-release": "^8.2.2"
   },
   "contributors": [
     {
