@@ -10,7 +10,7 @@
   "scripts": {
     "cover": "nyc npm test",
     "test": "mocha tests/*-test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "docs": "jsdoc2md -l off -t doc/README.hbs -f src/*.js >README.md",
     "pretest": "rollup -c",
     "posttest": "markdown-doctest",
@@ -33,7 +33,7 @@
     "mocha": "^4.0.1",
     "nyc": "^11.3.0",
     "rollup": "^0.50.0",
-    "semantic-release": "^8.2.3"
+    "semantic-release": "^9.1.0"
   },
   "contributors": [
     {
