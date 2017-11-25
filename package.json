@@ -32,7 +32,7 @@
     "markdown-doctest": "^0.9.1",
     "mocha": "^4.0.1",
     "nyc": "^11.3.0",
-    "rollup": "^0.51.8",
+    "rollup": "^0.52.0",
     "semantic-release": "^10.0.1"
   },
   "contributors": [
