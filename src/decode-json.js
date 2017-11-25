@@ -11,13 +11,13 @@ export class DecodeJSONInterceptor extends Interceptor {
   }
 
   receive(request, args) {
-    return new Promise((fullfilled, rejected) =>
+    return new Promise((resolve, reject) =>
       request.payload.pipe(
         pcs((err, data) => {
           if (err) {
-            rejected(err);
+            reject(err);
           } else {
-            fullfilled({
+            resolve({
               data: data
             });
           }
@@ -28,5 +28,5 @@ export class DecodeJSONInterceptor extends Interceptor {
 }
 
 export function registerWithManager(manager) {
-  manager.registerInterceptor(DecodeJSONInterceptor);
+  return manager.registerInterceptor(DecodeJSONInterceptor);
 }
