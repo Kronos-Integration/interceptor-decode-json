@@ -1,19 +1,9 @@
-/* global describe, it, xit */
-/* jslint node: true, esnext: true */
+const fs = require('fs');
+const path = require('path');
 
-'use strict';
-
-const chai = require('chai'),
-  assert = chai.assert,
-  expect = chai.expect,
-  should = chai.should(),
-  fs = require('fs'),
-  path = require('path'),
-  kti = require('kronos-test-interceptor'),
-  JSONDecodeInterceptor = require('../dist/decode-json').DecodeJSONInterceptor;
-
-const mochaInterceptorTest = kti.mochaInterceptorTest,
-  testResponseHandler = kti.testResponseHandler;
+import test from 'ava';
+import { interceptorTest, testResponseHandler } from 'kronos-test-interceptor';
+import { DecodeJSONInterceptor } from '../src/decode-json';
 
 const logger = {
   debug(a) {
@@ -21,7 +11,6 @@ const logger = {
   }
 };
 
-/* simple owner with name */
 function dummyEndpoint(name) {
   return {
     get name() {
@@ -37,31 +26,33 @@ function dummyEndpoint(name) {
   };
 }
 
-describe('interceptors', () => {
-  const ep = dummyEndpoint('ep');
-
-  mochaInterceptorTest(JSONDecodeInterceptor, ep, {}, 'decode-json', (itc, withConfig) => {
-    if (!withConfig) return;
-
-    describe('json', () => {
-      it('toJSON', () => {
-        assert.deepEqual(itc.toJSON(), {
-          type: 'decode-json'
-        });
-      });
+test(
+  'basic',
+  interceptorTest,
+  DecodeJSONInterceptor,
+  dummyEndpoint('ep1'),
+  {},
+  'decode-json',
+  async (t, interceptor, withConfig) => {
+    t.deepEqual(interceptor.toJSON(), {
+      type: 'decode-json'
     });
 
-    itc.connected = dummyEndpoint('ep');
-    itc.connected.receive = testResponseHandler;
+    if (!withConfig) return;
 
-    it('passing request', () => itc.receive({
-      payload: fs.createReadStream(path.join(__dirname, 'fixtures/simple.json'))
-    }).then((response) => {
-      assert.deepEqual(response, {
-        data: {
-          a: 1
-        }
-      });
-    }));
-  });
-});
+    interceptor.connected = dummyEndpoint('ep');
+    interceptor.connected.receive = testResponseHandler;
+
+    const response = await interceptor.receive({
+      payload: fs.createReadStream(
+        path.join(__dirname, '..', 'tests', 'fixtures', 'simple.json')
+      )
+    });
+
+    t.deepEqual(response, {
+      data: {
+        a: 1
+      }
+    });
+  }
+);

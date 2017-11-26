@@ -4,14 +4,13 @@
   "description": "decodes json streams into objects",
   "main": "dist/decode-json.js",
   "module": "src/decode-json.js",
-  "keywords": [
-    "kronos-interceptor"
-  ],
+  "keywords": ["kronos-interceptor"],
   "scripts": {
     "cover": "nyc --temp-directory build/nyc ava",
     "test": "ava",
     "semantic-release": "semantic-release",
-    "docs": "jsdoc2md --configure doc/jsdoc.json -l off -t doc/README.hbs -f src/*.js >README.md",
+    "docs":
+      "jsdoc2md --configure doc/jsdoc.json -l off -t doc/README.hbs -f src/*.js >README.md",
     "pretest": "rollup -c tests/rollup.config.js",
     "posttest": "npm run prepare && markdown-doctest",
     "precover": "rollup -c tests/rollup.config.js",
@@ -19,24 +18,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
+    "url":
+      "git+https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
   },
   "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
+    "url":
+      "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
   },
-  "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
+  "homepage":
+    "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
   "devDependencies": {
+    "ava": "^0.23.0",
+    "babel-preset-env": "^1.6.1",
+    "jsdoc-babel": "^0.3.0",
     "jsdoc-to-markdown": "^3.0.2",
-    "kronos-test-interceptor": "^2.1.0",
+    "kronos-test-interceptor": "^3.1.0",
     "markdown-doctest": "^0.9.1",
     "nyc": "^11.3.0",
     "rollup": "^0.52.0",
-    "semantic-release": "^10.0.1",
-    "jsdoc-babel": "^0.3.0",
-    "ava": "^0.23.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-multi-entry": "^2.0.2",
-    "babel-preset-env": "^1.6.1",
+    "semantic-release": "^10.0.1",
     "xo": "^0.19.0"
   },
   "contributors": [
@@ -54,17 +56,13 @@
     "node": ">=8.9.1"
   },
   "dependencies": {
-    "kronos-interceptor": "2.5.0",
+    "kronos-interceptor": "^2.5.1",
     "parse-concat-stream": "^0.2.0"
   },
   "nyc": {
-    "include": [
-      "dist/**/*.js"
-    ],
-    "reporter": [
-      "lcov"
-    ],
-    "report-dir": "./coverage"
+    "include": ["build/*-test.js", "src/**/*.js"],
+    "reporter": ["lcov"],
+    "report-dir": "./build/coverage"
   },
   "template": {
     "repository": {
@@ -75,14 +73,8 @@
     "space": true
   },
   "ava": {
-    "files": [
-      "build/*-test.js"
-    ],
-    "presets": [
-      "env"
-    ],
-    "require": [
-      "babel-register"
-    ]
+    "files": ["build/*-test.js"],
+    "presets": ["env"],
+    "require": ["babel-register"]
   }
 }
