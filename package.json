@@ -50,7 +50,7 @@
     "node": ">=8.9.1"
   },
   "dependencies": {
-    "kronos-interceptor": "2.5.0",
+    "kronos-interceptor": "2.5.1",
     "parse-concat-stream": "^0.2.0"
   },
   "nyc": {
