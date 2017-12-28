@@ -1,42 +1,12 @@
 {
   "name": "kronos-interceptor-decode-json",
   "version": "0.0.0-semantic-release",
-  "description": "decodes json streams into objects",
   "main": "dist/decode-json.js",
   "module": "src/decode-json.js",
+  "description": "decodes json streams into objects",
   "keywords": [
     "kronos-interceptor"
   ],
-  "scripts": {
-    "cover": "nyc --temp-directory build/nyc ava",
-    "test": "ava",
-    "semantic-release": "semantic-release",
-    "docs": "documentation readme src/decode-json.js --section=API",
-    "pretest": "rollup -c tests/rollup.config.js",
-    "posttest": "npm run prepare && markdown-doctest",
-    "precover": "rollup -c tests/rollup.config.js",
-    "prepare": "rollup -c",
-    "lint": "documentation lint src/decode-json.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
-  },
-  "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
-  "devDependencies": {
-    "ava": "^0.24.0",
-    "kronos-test-interceptor": "^3.1.0",
-    "markdown-doctest": "^0.9.1",
-    "nyc": "^11.4.1",
-    "rollup": "^0.53.0",
-    "rollup-plugin-multi-entry": "^2.0.2",
-    "semantic-release": "^11.1.0",
-    "xo": "^0.19.0",
-    "documentation": "^5.3.5"
-  },
   "contributors": [
     {
       "name": "Torsten Link",
@@ -48,12 +18,53 @@
     }
   ],
   "license": "BSD-2-Clause",
-  "engines": {
-    "node": ">=8.9.3"
+  "scripts": {
+    "cover": "nyc --temp-directory build/nyc ava",
+    "test": "ava",
+    "semantic-release": "semantic-release",
+    "docs": "documentation readme src/decode-json.js --section=API",
+    "pretest": "rollup -c tests/rollup.config.js",
+    "posttest": "npm run prepare && markdown-doctest",
+    "precover": "rollup -c tests/rollup.config.js",
+    "prepare": "rollup -c",
+    "lint": "documentation lint src/decode-json.js"
   },
   "dependencies": {
     "kronos-interceptor": "^2.5.2",
     "parse-concat-stream": "^0.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "kronos-test-interceptor": "^3.1.0",
+    "markdown-doctest": "^0.9.1",
+    "nyc": "^11.4.1",
+    "rollup": "^0.53.0",
+    "rollup-plugin-multi-entry": "^2.0.2",
+    "semantic-release": "^11.1.0",
+    "xo": "^0.19.0",
+    "documentation": "^5.3.5"
+  },
+  "engines": {
+    "node": ">=8.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
+  },
+  "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
+  "ava": {
+    "files": [
+      "build/*-test.js"
+    ],
+    "presets": [
+      "env"
+    ],
+    "require": [
+      "babel-register"
+    ]
   },
   "nyc": {
     "include": [
@@ -65,23 +76,12 @@
     ],
     "report-dir": "./build/coverage"
   },
+  "xo": {
+    "space": true
+  },
   "template": {
     "repository": {
       "url": "https://github.com/arlac77/npm-package-template.git"
     }
-  },
-  "xo": {
-    "space": true
-  },
-  "ava": {
-    "files": [
-      "build/*-test.js"
-    ],
-    "presets": [
-      "env"
-    ],
-    "require": [
-      "babel-register"
-    ]
   }
 }
