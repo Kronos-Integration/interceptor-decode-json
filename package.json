@@ -43,14 +43,14 @@
     "rollup-plugin-multi-entry": "^2.0.2",
     "semantic-release": "^12.2.4",
     "documentation": "^5.3.5",
-    "travis-deploy-once": "^4.3.2"
+    "travis-deploy-once": "^4.3.3"
   },
   "engines": {
     "node": ">=8.9.4"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
+    "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
   },
   "bugs": {
     "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
