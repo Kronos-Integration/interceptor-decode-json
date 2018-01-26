@@ -35,7 +35,7 @@
     "parse-concat-stream": "^0.2.0"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "kronos-test-interceptor": "^3.1.0",
     "markdown-doctest": "^0.9.1",
     "nyc": "^11.4.1",
