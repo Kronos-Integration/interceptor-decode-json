@@ -1,6 +1,9 @@
 {
   "name": "kronos-interceptor-decode-json",
   "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/decode-json.js",
   "module": "src/decode-json.js",
   "description": "decodes json streams into objects",
@@ -38,7 +41,7 @@
     "ava": "^0.25.0",
     "kronos-test-interceptor": "^3.1.0",
     "markdown-doctest": "^0.9.1",
-    "nyc": "^11.8.0",
+    "nyc": "^12.0.1",
     "rollup": "^0.59.4",
     "rollup-plugin-multi-entry": "^2.0.2",
     "semantic-release": "^15.5.0",
