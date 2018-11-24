@@ -10,8 +10,6 @@ notifications:
   email:
     - torstenlink@gmx.de
     - markus.felten@gmx.de
-before_install:
-  - npm i -g npm@latest
 before_script:
   - npm prune
   - npm install -g --production coveralls codecov
