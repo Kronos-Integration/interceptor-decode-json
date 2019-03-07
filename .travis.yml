@@ -9,7 +9,6 @@ cache: npm
 notifications:
   email:
     - torstenlink@gmx.de
-    - markus.felten@gmx.de
 script:
   - npm run cover
 jobs:
