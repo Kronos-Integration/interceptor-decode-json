@@ -7,7 +7,6 @@
 [![Coverage Status](https://coveralls.io/repos/Kronos-Integration/kronos-interceptor-decode-json/badge.svg)](https://coveralls.io/r/Kronos-Integration/kronos-interceptor-decode-json)
 [![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/kronos-interceptor-decode-json/badge.svg)](https://snyk.io/test/github/Kronos-Integration/kronos-interceptor-decode-json)
 [![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/kronos-interceptor-decode-json.svg?style=flat-square)](https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues)
-[![Stories in Ready](https://badge.waffle.io/Kronos-Integration/kronos-interceptor-decode-json.svg?label=ready&title=Ready)](http://waffle.io/Kronos-Integration/kronos-interceptor-decode-json)
 [![Dependency Status](https://david-dm.org/Kronos-Integration/kronos-interceptor-decode-json.svg)](https://david-dm.org/Kronos-Integration/kronos-interceptor-decode-json)
 [![devDependency Status](https://david-dm.org/Kronos-Integration/kronos-interceptor-decode-json/dev-status.svg)](https://david-dm.org/Kronos-Integration/kronos-interceptor-decode-json#info=devDependencies)
 [![docs](http://inch-ci.org/github/Kronos-Integration/kronos-interceptor-decode-json.svg?branch=master)](http://inch-ci.org/github/Kronos-Integration/kronos-interceptor-decode-json)
