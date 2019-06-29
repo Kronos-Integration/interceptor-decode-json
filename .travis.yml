@@ -2,26 +2,19 @@ language: node_js
 node_js:
   - 10.16.0
   - 12.5.0
-branches:
-  only:
-    - master
-    - /^greenkeeper/.*$/
 cache: npm
-notifications:
-  email:
-    - torstenlink@gmx.de
+
 script:
   - npm run cover
+  - npx codecov
+  - cat ./build/coverage/lcov.info | npx coveralls
+
 jobs:
   include:
-    - stage: docs
+    - stage: doc
       node_js: lts/*
       skip_cleanup: 'true'
       script:
-        - npm install -g --production coveralls codecov
-        - npm run cover
-        - codecov
-        - cat ./coverage/lcov.info | coveralls
         - npm run lint
         - npm run docs
     - stage: release
