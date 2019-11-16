@@ -1,6 +1,6 @@
 const pcs = require('parse-concat-stream');
 
-import { Interceptor } from 'kronos-interceptor';
+import { Interceptor } from '@kronos-integration/interceptor';
 
 /**
  *
@@ -25,8 +25,4 @@ export class DecodeJSONInterceptor extends Interceptor {
       )
     );
   }
-}
-
-export function registerWithManager(manager) {
-  return manager.registerInterceptor(DecodeJSONInterceptor);
 }
