@@ -1,9 +1,8 @@
-const fs = require('fs');
-const path = require('path');
-
-import test from 'ava';
-import { interceptorTest, testResponseHandler } from 'kronos-test-interceptor';
-import { DecodeJSONInterceptor } from '../src/decode-json';
+import { join } from "path";
+import { createReadStream } from "fs";
+import test from "ava";
+import { interceptorTest, testResponseHandler } from "kronos-test-interceptor";
+import { DecodeJSONInterceptor } from "../src/decode-json.mjs";
 
 const logger = {
   debug(a) {
@@ -17,7 +16,7 @@ function dummyEndpoint(name) {
       return name;
     },
     get path() {
-      return '/get:id';
+      return "/get:id";
     },
     toString() {
       return this.name;
@@ -27,32 +26,30 @@ function dummyEndpoint(name) {
 }
 
 test(
-  'basic',
+  "basic",
   interceptorTest,
   DecodeJSONInterceptor,
-  dummyEndpoint('ep1'),
+  dummyEndpoint("ep1"),
   {},
-  'decode-json',
+  "decode-json",
   async (t, interceptor, withConfig) => {
     t.deepEqual(interceptor.toJSON(), {
-      type: 'decode-json'
+      type: "decode-json"
     });
 
     if (!withConfig) return;
 
-    interceptor.connected = dummyEndpoint('ep');
+    interceptor.connected = dummyEndpoint("ep");
     interceptor.connected.receive = testResponseHandler;
 
-    const response = await interceptor.receive({
-      payload: fs.createReadStream(
-        path.join(__dirname, '..', 'tests', 'fixtures', 'simple.json')
+    const response = await interceptor.receive(
+      createReadStream(
+        join(__dirname, "..", "tests", "fixtures", "simple.json")
       )
-    });
+    );
 
     t.deepEqual(response, {
-      data: {
-        a: 1
-      }
+      a: 1
     });
   }
 );

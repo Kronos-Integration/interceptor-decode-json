@@ -1,4 +1,3 @@
-const pcs = require('parse-concat-stream');
 
 import { Interceptor } from '@kronos-integration/interceptor';
 
@@ -11,18 +10,6 @@ export class DecodeJSONInterceptor extends Interceptor {
   }
 
   receive(request, args) {
-    return new Promise((resolve, reject) =>
-      request.payload.pipe(
-        pcs((err, data) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve({
-              data: data
-            });
-          }
-        })
-      )
-    );
+    return JSON.parse(request);
   }
 }
