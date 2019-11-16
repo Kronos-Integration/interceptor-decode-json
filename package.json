@@ -47,12 +47,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git"
+    "url": "https://github.com/Kronos-Integration/interceptor-decode-json.git"
   },
   "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json/issues"
+    "url": "https://github.com/Kronos-Integration/interceptor-decode-json/issues"
   },
-  "homepage": "https://github.com/Kronos-Integration/kronos-interceptor-decode-json#readme",
+  "homepage": "https://github.com/Kronos-Integration/interceptor-decode-json#readme",
   "ava": {
     "files": [
       "tests/*-test.mjs"
