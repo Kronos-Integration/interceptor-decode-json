@@ -30,7 +30,7 @@
     "test": "ava"
   },
   "dependencies": {
-    "@kronos-integration/interceptor": "^4.0.1"
+    "@kronos-integration/interceptor": "^5.0.0"
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^5.1.1",
