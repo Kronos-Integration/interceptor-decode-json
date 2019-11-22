@@ -1,7 +1,7 @@
 import { join } from "path";
 import { createReadStream } from "fs";
 import test from "ava";
-import { interceptorTest, testResponseHandler } from "kronos-test-interceptor";
+import { interceptorTest, testResponseHandler } from "@kronos-integration/test-interceptor";
 import { DecodeJSONInterceptor } from "../src/decode-json.mjs";
 
 const logger = {
