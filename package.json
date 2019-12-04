@@ -1,10 +1,11 @@
 {
   "name": "@kronos-integration/interceptor-decode-json",
   "version": "0.0.0-semantic-release",
-  "type": "module",
   "publishConfig": {
     "access": "public"
   },
+  "sideEffects": false,
+  "type": "module",
   "main": "src/decode-json.mjs",
   "module": "src/decode-json.mjs",
   "description": "decodes json streams into objects",
@@ -69,6 +70,5 @@
     "repository": {
       "url": "https://github.com/arlac77/npm-package-template-esm-only.git"
     }
-  },
-  "sideEffects": false
+  }
 }
