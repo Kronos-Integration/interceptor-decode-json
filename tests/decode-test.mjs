@@ -3,7 +3,7 @@ import {
   dummyEndpoint,
   interceptorTest
 } from "@kronos-integration/test-interceptor";
-import { DecodeJSONInterceptor } from "../src/decode-json.mjs";
+import { EncodeJSONInterceptor, DecodeJSONInterceptor } from "../src/decode-json.mjs";
 
 test(
   interceptorTest,
@@ -15,5 +15,18 @@ test(
   (request) => request.map(x => x * x),
   async (t, interceptor, e, next, result) => {
     t.deepEqual(result, JSON.stringify([1, 4, 9]));
+  }
+);
+
+test(
+  interceptorTest,
+  EncodeJSONInterceptor,
+  undefined,
+  { type: "encode-json", json: { type: "encode-json" } },
+  dummyEndpoint("ep"),
+  [1, 2],
+  (request) => request.map(x => x.replace(/2/, "4")),
+  async (t, interceptor, e, next, result) => {
+    t.deepEqual(result, [1, 4]);
   }
 );
