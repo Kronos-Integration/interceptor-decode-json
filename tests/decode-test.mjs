@@ -1,55 +1,19 @@
-import { join } from "path";
-import { createReadStream } from "fs";
 import test from "ava";
-import { interceptorTest, testResponseHandler } from "@kronos-integration/test-interceptor";
+import {
+  dummyEndpoint,
+  interceptorTest
+} from "@kronos-integration/test-interceptor";
 import { DecodeJSONInterceptor } from "../src/decode-json.mjs";
 
-const logger = {
-  debug(a) {
-    console.log(a);
-  }
-};
-
-function dummyEndpoint(name) {
-  return {
-    get name() {
-      return name;
-    },
-    get path() {
-      return "/get:id";
-    },
-    toString() {
-      return this.name;
-    },
-    step: logger
-  };
-}
-
 test(
-  "basic",
   interceptorTest,
   DecodeJSONInterceptor,
-  dummyEndpoint("ep1"),
-  {},
-  "decode-json",
-  async (t, interceptor, withConfig) => {
-    t.deepEqual(interceptor.toJSON(), {
-      type: "decode-json"
-    });
-
-    if (!withConfig) return;
-
-    interceptor.connected = dummyEndpoint("ep");
-    interceptor.connected.receive = testResponseHandler;
-
-    const response = await interceptor.receive(
-      createReadStream(
-        join(__dirname, "..", "tests", "fixtures", "simple.json")
-      )
-    );
-
-    t.deepEqual(response, {
-      a: 1
-    });
+  undefined,
+  { type: "decode-json", json: { type: "decode-json" } },
+  dummyEndpoint("ep"),
+  ["[1, 2, 3]"],
+  (request) => request.map(x => x * x),
+  async (t, interceptor, e, next, result) => {
+    t.deepEqual(result, JSON.stringify([1, 4, 9]));
   }
 );

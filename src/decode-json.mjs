@@ -9,7 +9,7 @@ export class DecodeJSONInterceptor extends Interceptor {
     return 'decode-json';
   }
 
-  receive(request) {
-    return this.connected(JSON.parse(request));
+  async receive(endpoint, next, request) {
+    return JSON.stringify(await next(JSON.parse(request)));
   }
 }
