@@ -27,7 +27,5 @@ export class EncodeJSONInterceptor extends Interceptor {
   }
 }
 
-export default EncodeJSONInterceptor;
-export default DecodeJSONInterceptor;
 
 
