@@ -13,3 +13,6 @@ export class DecodeJSONInterceptor extends Interceptor {
     return JSON.stringify(await next(JSON.parse(request)));
   }
 }
+
+
+export default DecodeJSONInterceptor;
