@@ -26,6 +26,3 @@ export class EncodeJSONInterceptor extends Interceptor {
     return JSON.parse(await next(JSON.stringify(request)));
   }
 }
-
-
-
