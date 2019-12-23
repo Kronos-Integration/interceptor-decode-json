@@ -18,6 +18,19 @@ test(
   }
 );
 
+test("handle undefined",
+  interceptorTest,
+  DecodeJSONInterceptor,
+  undefined,
+  { type: "decode-json", json: { type: "decode-json" } },
+  dummyEndpoint("ep"),
+  undefined,
+  (request) => undefined,
+  async (t, interceptor, e, next, result) => {
+    t.is(result, undefined);
+  }
+);
+
 test(
   interceptorTest,
   EncodeJSONInterceptor,
@@ -28,5 +41,19 @@ test(
   (request) => "[1,4]", //request.replace(/2/, "4"),
   async (t, interceptor, e, next, result) => {
     t.deepEqual(result, [1, 4]);
+  }
+);
+
+
+test("handle undefined",
+  interceptorTest,
+  EncodeJSONInterceptor,
+  undefined,
+  { type: "encode-json", json: { type: "encode-json" } },
+  dummyEndpoint("ep"),
+  undefined,
+  (request) => undefined,
+  async (t, interceptor, e, next, result) => {
+    t.is(result, undefined);
   }
 );

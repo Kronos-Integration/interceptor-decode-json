@@ -10,7 +10,8 @@ export class DecodeJSONInterceptor extends Interceptor {
   }
 
   async receive(endpoint, next, request) {
-    return JSON.stringify(await next(JSON.parse(request)));
+    const response = await (request === undefined ? next(undefined): next(JSON.parse(request)));
+    return response === undefined ? undefined : JSON.stringify(response);
   }
 }
 
@@ -23,6 +24,7 @@ export class EncodeJSONInterceptor extends Interceptor {
   }
 
   async receive(endpoint, next, request) {
-    return JSON.parse(await next(JSON.stringify(request)));
+    const response = await (request === undefined ? next() : next(JSON.stringify(request)));
+    return response === undefined ? undefined : JSON.parse(response); 
   }
 }
