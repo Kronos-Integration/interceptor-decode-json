@@ -1,7 +1,7 @@
 [![Build Status](https://secure.travis-ci.org/Kronos-Integration/interceptor-decode-json.png)](http://travis-ci.org/Kronos-Integration/interceptor-decode-json)
 [![codecov.io](http://codecov.io/github/Kronos-Integration/interceptor-decode-json/coverage.svg?branch=master)](http://codecov.io/github/Kronos-Integration/interceptor-decode-json?branch=master)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![downloads](http://img.shields.io/npm/dm/interceptor-decode-json.svg?style=flat-square)](https://npmjs.org/package/interceptor-decode-json)
+[![downloads](http://img.shields.io/npm/dm/@kronos-integration/interceptor-decode-json.svg?style=flat-square)](https://npmjs.org/package/@kronos-integration/interceptor-decode-json)
 [![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/interceptor-decode-json.svg?style=flat-square)](https://github.com/Kronos-Integration/interceptor-decode-json/issues)
 [![Greenkeeper](https://badges.greenkeeper.io/Kronos-Integration/interceptor-decode-json.svg)](https://greenkeeper.io/)
 [![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/interceptor-decode-json/badge.svg)](https://snyk.io/test/github/Kronos-Integration/interceptor-decode-json)
