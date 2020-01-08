@@ -28,7 +28,8 @@
     "docs": "documentation readme src/decode-json.mjs --section=API",
     "lint": "documentation lint src/decode-json.mjs",
     "posttest": "markdown-doctest",
-    "test": "ava"
+    "test": "ava",
+    "prepare": "rollup -c"
   },
   "dependencies": {
     "@kronos-integration/interceptor": "^8.1.0"
