@@ -1,0 +1,10 @@
+{
+  "name": "@kronos-integration/interceptor-decode-json",
+  "description": "decodes json streams into objects",
+  "icons": [
+    {
+      "src": "facicon.ico",
+      "sizes": "16x16"
+    }
+  ]
+}
