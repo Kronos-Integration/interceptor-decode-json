@@ -24,8 +24,8 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "test": "ava && ava --timeout 2m",
-    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
+    "test": "ava --node-arguments '--experimental-modules' --timeout 2m",
+    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --node-arguments '--experimental-modules' --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "docs": "documentation readme src/decode-json.mjs --section=API",
     "lint": "documentation lint src/decode-json.mjs"
   },
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.0",
-    "ava": "^3.3.0",
+    "ava": "^3.4.0",
     "c8": "^7.1.0",
     "documentation": "^12.1.4",
     "semantic-release": "^17.0.4"
