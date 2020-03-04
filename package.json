@@ -51,6 +51,9 @@
   },
   "homepage": "https://github.com/Kronos-Integration/interceptor-decode-json#readme",
   "template": {
-    "inheritFrom": "arlac77/template-kronos-module"
+    "inheritFrom": [
+      "arlac77/template-kronos-module",
+      "arlac77/template-github"
+    ]
   }
 }
