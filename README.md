@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![minified size](https://badgen.net/bundlephobia/min/@kronos-integration/interceptor-decode-json)](https://bundlephobia.com/result?p=@kronos-integration/interceptor-decode-json)
 [![downloads](http://img.shields.io/npm/dm/@kronos-integration/interceptor-decode-json.svg?style=flat-square)](https://npmjs.org/package/@kronos-integration/interceptor-decode-json)
+[![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/interceptor-decode-json.svg?style=flat-square)](https://github.com/Kronos-Integration/interceptor-decode-json/issues)
 [![Build Status](https://secure.travis-ci.org/Kronos-Integration/interceptor-decode-json.png)](http://travis-ci.org/Kronos-Integration/interceptor-decode-json)
 [![Greenkeeper](https://badges.greenkeeper.io/Kronos-Integration/interceptor-decode-json.svg)](https://greenkeeper.io/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/Kronos-Integration/interceptor-decode-json)
