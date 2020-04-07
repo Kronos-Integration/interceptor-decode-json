@@ -36,7 +36,7 @@
     "@kronos-integration/test-interceptor": "^7.0.0",
     "ava": "^3.6.0",
     "c8": "^7.1.0",
-    "documentation": "^12.2.0",
+    "documentation": "^12.3.0",
     "semantic-release": "^17.0.4"
   },
   "engines": {
