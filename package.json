@@ -7,7 +7,6 @@
   "sideEffects": false,
   "type": "module",
   "main": "src/decode-json.mjs",
-  "module": "src/decode-json.mjs",
   "description": "decodes json streams into objects",
   "keywords": [
     "kronos-interceptor"
