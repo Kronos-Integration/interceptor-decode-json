@@ -6,7 +6,7 @@
   },
   "sideEffects": false,
   "type": "module",
-  "main": "src/decode-json.mjs",
+  "main": "./src/decode-json.mjs",
   "exports": {
     ".": "./src/decode-json.mjs",
     "./": "./"
