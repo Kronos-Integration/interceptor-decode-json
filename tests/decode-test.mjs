@@ -3,7 +3,7 @@ import {
   dummyEndpoint,
   interceptorTest
 } from "@kronos-integration/test-interceptor";
-import { EncodeJSONInterceptor, DecodeJSONInterceptor } from "../src/decode-json.mjs";
+import { EncodeJSONInterceptor, DecodeJSONInterceptor } from "@kronos-integration/interceptor-decode-json";
 
 test(
   interceptorTest,

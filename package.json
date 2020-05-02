@@ -33,10 +33,10 @@
     "lint": "documentation lint ./src/decode-json.mjs"
   },
   "dependencies": {
-    "@kronos-integration/interceptor": "^9.0.0"
+    "@kronos-integration/interceptor": "^9.1.0"
   },
   "devDependencies": {
-    "@kronos-integration/test-interceptor": "^7.0.0",
+    "@kronos-integration/test-interceptor": "^7.0.3",
     "ava": "^3.8.1",
     "c8": "^7.1.1",
     "documentation": "^12.3.0",
