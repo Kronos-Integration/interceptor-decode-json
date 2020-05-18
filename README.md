@@ -22,8 +22,13 @@ decodes json streams into objects
 ### Table of Contents
 
 -   [DecodeJSONInterceptor](#decodejsoninterceptor)
+-   [EncodeJSONInterceptor](#encodejsoninterceptor)
 
 ## DecodeJSONInterceptor
+
+**Extends Interceptor**
+
+## EncodeJSONInterceptor
 
 **Extends Interceptor**
 
