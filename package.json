@@ -8,8 +8,7 @@
   "type": "module",
   "main": "./src/decode-json.mjs",
   "exports": {
-    ".": "./src/decode-json.mjs",
-    "./": "./"
+    ".": "./src/decode-json.mjs"
   },
   "description": "decodes json streams into objects",
   "keywords": [
