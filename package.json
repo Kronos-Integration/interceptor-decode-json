@@ -32,7 +32,7 @@
     "lint": "documentation lint ./src/decode-json.mjs"
   },
   "dependencies": {
-    "@kronos-integration/interceptor": "^9.2.1"
+    "@kronos-integration/interceptor": "^9.2.2"
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.3",
@@ -42,7 +42,7 @@
     "semantic-release": "^17.1.1"
   },
   "engines": {
-    "node": ">=14.3.0"
+    "node": ">=14.5.0"
   },
   "repository": {
     "type": "git",
