@@ -36,13 +36,13 @@
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.3",
-    "ava": "^3.11.0",
-    "c8": "^7.2.1",
+    "ava": "^3.11.1",
+    "c8": "^7.3.0",
     "documentation": "^13.0.2",
     "semantic-release": "^17.1.1"
   },
   "engines": {
-    "node": ">=14.5.0"
+    "node": ">=14.7.0"
   },
   "repository": {
     "type": "git",
