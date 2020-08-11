@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 14.7.0
+          - 14.8.0
     steps:
       - uses: actions/checkout@v2
       - name: checkout
