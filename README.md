@@ -8,7 +8,6 @@
 [![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/interceptor-decode-json/badge.svg)](https://snyk.io/test/github/Kronos-Integration/interceptor-decode-json)
-[![Coverage Status](https://coveralls.io/repos/Kronos-Integration/interceptor-decode-json/badge.svg)](https://coveralls.io/r/Kronos-Integration/interceptor-decode-json)
 
 # kronos-interceptor-decode-json
 
