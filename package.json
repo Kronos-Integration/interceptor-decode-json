@@ -12,6 +12,8 @@
   },
   "description": "decodes json streams into objects",
   "keywords": [
+    "endpoint",
+    "interceptor",
     "kronos-interceptor"
   ],
   "contributors": [
@@ -29,12 +31,13 @@
     "test": "npm run test:ava",
     "test:ava": "ava --timeout 2m tests/*.mjs",
     "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 2m tests/*.mjs && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
-    "docs": "documentation readme ./src/decode-json.mjs --section=API",
+    "docs": "documentation readme ./src/module.mjs --section=API && documentation readme ./src/decode-json.mjs --section=API && documentation readme ./src/index.mjs --section=API",
     "lint": "npm run lint:docs",
-    "lint:docs": "documentation lint ./src/decode-json.mjs"
+    "lint:docs": "documentation lint ./src/module.mjs && documentation lint ./src/decode-json.mjs && documentation lint ./src/index.mjs"
   },
   "dependencies": {
-    "@kronos-integration/interceptor": "^10.2.0"
+    "@kronos-integration/interceptor": "^10.2.0",
+    "model-attributes": "^4.1.7"
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.7",
