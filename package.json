@@ -37,7 +37,7 @@
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.9",
     "ava": "^3.15.0",
-    "c8": "^7.4.0",
+    "c8": "^7.5.0",
     "documentation": "github:arlac77/documentation",
     "semantic-release": "^17.3.7"
   },
