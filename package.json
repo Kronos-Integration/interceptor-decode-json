@@ -38,11 +38,11 @@
     "@kronos-integration/test-interceptor": "^7.0.11",
     "ava": "^3.15.0",
     "c8": "^7.7.2",
-    "documentation": "^13.2.4",
+    "documentation": "^13.2.5",
     "semantic-release": "^17.4.2"
   },
   "engines": {
-    "node": ">=14.16.0"
+    "node": ">=14.16.1"
   },
   "repository": {
     "type": "git",
