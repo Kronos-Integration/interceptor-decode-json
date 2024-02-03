@@ -2,7 +2,8 @@
   "name": "@kronos-integration/interceptor-decode-json",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./src/decode-json.mjs"
