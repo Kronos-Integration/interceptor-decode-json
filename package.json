@@ -37,7 +37,7 @@
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.27",
     "ava": "^6.1.3",
-    "c8": "^9.1.0",
+    "c8": "^10.0.0",
     "documentation": "^14.0.3",
     "semantic-release": "^24.0.0"
   },
