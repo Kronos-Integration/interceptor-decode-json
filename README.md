@@ -1,7 +1,4 @@
-[![npm](https://img.shields.io/npm/v/@kronos-integration/interceptor-decode-json.svg)](https://www.npmjs.com/package/@kronos-integration/interceptor-decode-json)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![bundlejs](https://deno.bundlejs.com/?q=@kronos-integration/interceptor-decode-json\&badge=detailed)](https://bundlejs.com/?q=@kronos-integration/interceptor-decode-json)
-[![downloads](http://img.shields.io/npm/dm/@kronos-integration/interceptor-decode-json.svg?style=flat-square)](https://npmjs.org/package/@kronos-integration/interceptor-decode-json)
 [![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/interceptor-decode-json.svg?style=flat-square)](https://github.com/Kronos-Integration/interceptor-decode-json/issues)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FKronos-Integration%2Finterceptor-decode-json%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/Kronos-Integration/interceptor-decode-json/goto)
 [![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
