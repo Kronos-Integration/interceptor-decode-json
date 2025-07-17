@@ -32,7 +32,7 @@
     "lint:docs": "documentation lint ./src/**/*.mjs"
   },
   "dependencies": {
-    "@kronos-integration/interceptor": "^10.3.4"
+    "@kronos-integration/interceptor": "^10.3.5"
   },
   "devDependencies": {
     "@kronos-integration/test-interceptor": "^7.0.29",
