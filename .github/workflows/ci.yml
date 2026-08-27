@@ -21,7 +21,7 @@ jobs:
           - macos-latest
           - windows-latest
         node-version:
-          - 26.7.0
+          - 26.8.1
     steps:
       - name: checkout
         uses: actions/checkout@v7.0.1
